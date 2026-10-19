@@ -60,6 +60,11 @@
 // setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 
 
+
+// https://github.com/balazs-szucs/embed-pdf-viewer/blob/23f5daecd75d64273874c203f912621fedc46085/packages/engines/CHANGELOG.md?plain=1#L170
+import { createPdfiumEngine } from '@embedpdf/engines/pdfium-worker-engine';
+
+
 import { WebWorkerEngine } from '@embedpdf/engines/worker';
 
 const worker = new Worker(new URL('./workers/webworker.ts', import.meta.url), { 
